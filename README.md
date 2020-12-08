@@ -38,11 +38,19 @@
 ## Api links to Retrieve, Delete, Add and Alter data to database
 
 * For Retriving all data :-
-#### Note that port number can vary depending on your localhost
+* Note that port number can vary depending on your localhost
     ```
     http://localhost:8000/api/pizzalist/
     ```
     
-* For Adding data - http://localhost:8000/api/pizadd/
-* For Alter/Delete data - http://localhost:8000/api/pizalter/i/ <!-- Note that here 'i' is the id of the database you want to delete or alter which you can view from the retriving link --->
+* For Adding data :- 
+    ```
+    http://localhost:8000/api/pizadd/
+    ```
+    
+* For Alter/Delete data :- 
+* Note that here 'i' is the id of the database you want to delete or alter which you can view from the retriving link
+    ```
+    http://localhost:8000/api/pizalter/i/
+    ```
 
