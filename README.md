@@ -35,3 +35,8 @@
     ```
         python manage.py runserver
     ```
+## Api links to Retrieve, Delete, Add and Alter data to database
+
+* For Retriving all data - http://localhost:8000/api/pizzalist/ <!-- Note that port number can vary depending on your localhost--->
+* For Adding data - http://localhost:8000/api/pizadd/
+* For Alter/Delete data - http://localhost:8000/api/pizalter/i/ <!-- Note that here 'i' is the id of the database you want to delete or alter which you can view from the retriving link -->
