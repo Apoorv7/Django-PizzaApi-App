@@ -29,7 +29,7 @@
         python manage.py migrate
     ```
  
-### 3. Running Server
+## Running Server
 
 * To start the server you need to enter this command :-
     ```
