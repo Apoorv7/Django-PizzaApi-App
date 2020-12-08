@@ -9,3 +9,8 @@
 * [Install pgAdmin4](https://www.pgadmin.org/download/)
 
 * After installing these you can download the zip file of the github link and open the folder in Visual Studio Code app.
+* In visual studio you have to install the remaining dependencies which you can find in the requirements.txt file.
+* To download the dependencies you can use this command :-
+    ```
+      pip install -r requirements.txt
+    ```
