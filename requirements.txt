@@ -1,6 +1,3 @@
-python
-django
-postgreSql
-pgAdmin4
-psycopg2
-djangorestframework
+psycopg2==2.8.6
+Django==3.0.5
+psycopg2==2.8.6
