@@ -3,6 +3,7 @@
 ## Environment Setup
 
 ### 1. Global dependencies
+
 * [Install Python](https://www.python.org/downloads/)
 * [Install Visual Studio Code](https://code.visualstudio.com/)
 * [Install Postgresql](https://www.postgresql.org/)
@@ -13,4 +14,24 @@
 * To download the dependencies you can use this command :-
     ```
       pip install -r requirements.txt
+    ```
+### 2. Setting up superuser for admin page and migrating models to database
+
+* For creating a superuser you need to run this command :-
+    ```
+        python manage.py createsuperuser
+    ```
+* After setting this up you need to migrate the models to the admin and the PostgreSql database.
+    ```
+        python manage.py makemigrations
+    ```
+    ```
+        python manage.py migrate
+    ```
+ 
+### 3. Running Server
+
+* To start the server you need to enter this command :-
+    ```
+        python manage.py runserver
     ```
