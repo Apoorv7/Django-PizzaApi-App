@@ -1,0 +1,6 @@
+python
+django
+postgreSql
+pgAdmin4
+psycopg2
+djangorestframework

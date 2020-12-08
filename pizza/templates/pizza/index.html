@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <style>
+            table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+        </style>
+    </head>
+    <body>
+        <input type="text" id="myInput" onkeypress="myFunction()" placeholder="Search for names.." title="Type in a name">
+        <div>
+            <table id="myTable">
+                <tr>
+                    <th>Pizzas</th>
+                    <th>Pizza Type</th>
+                    <th>Pizza Size</th>
+                    <th>Pizza Topping</th>   
+                </tr>
+            {% for d in data %}
+                <tr>
+                    <td>{{d.id}}</td>
+                    <td>{{d.Ptype}}</td>
+                    <td>{{d.Psize}}</td>
+                    <td>{{d.Ptop}}</td>   
+                </tr>
+                
+            {% endfor %}
+            </table>
+
+        </div>
+        <script>
+            function myFunction() {
+              var input, filter, table, tr, td, i, txtValue;
+              input = document.getElementById("myInput");
+              filter = input.value.toUpperCase();
+              table = document.getElementById("myTable");
+              tr = table.getElementsByTagName("tr");
+              for (i = 0; i < tr.length; i++) {
+                td = tr[i].getElementsByTagName("td")[1];
+                if (td) {
+                  txtValue = td.textContent || td.innerText;
+                  if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    tr[i].style.display = "";
+                  } else {
+                    tr[i].style.display = "none";
+                  }
+                }       
+              }
+            }
+            </script>        
+    </body>
+</html>
