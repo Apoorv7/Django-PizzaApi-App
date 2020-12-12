@@ -20,7 +20,9 @@
     ```
 ### 2. Setting up superuser for admin page and migrating models to database
 
-* After setting this up you need to migrate the models to the admin and the PostgreSql database.
+* Also please change the postgres password in the settings.py file in dpa folder as per your given password or it will throw error.
+
+* After setting global dependencies you need to migrate the models to the admin and the PostgreSql database.
     ```
         python manage.py makemigrations
     ```
