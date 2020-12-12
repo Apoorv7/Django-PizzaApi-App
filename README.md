@@ -10,7 +10,7 @@
 * [Install pgAdmin4](https://www.pgadmin.org/download/)
 
 
-* After installing these you can download the zip file of the github link and open the folder in Visual Studio Code app. 
+* After installing these you can download the zip file of the github link then extract it and open the folder in Visual Studio Code app. 
 
 * Then open pgAdmin4 and create a database dpa.
 * In visual studio you have to install the remaining dependencies which you can find in the requirements.txt file.
