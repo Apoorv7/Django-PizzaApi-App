@@ -20,10 +20,6 @@
     ```
 ### 2. Setting up superuser for admin page and migrating models to database
 
-* For creating a superuser you need to run this command :-
-    ```
-        python manage.py createsuperuser
-    ```
 * After setting this up you need to migrate the models to the admin and the PostgreSql database.
     ```
         python manage.py makemigrations
@@ -31,6 +27,12 @@
     ```
         python manage.py migrate
     ```
+    
+* For creating a superuser you need to run this command :-
+    ```
+        python manage.py createsuperuser
+    ```
+
  
 ## Running Server
 
